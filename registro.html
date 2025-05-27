@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Escopark - Iniciar Sesión</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background">
+    <div class="registro-container">
+      <h1>REGISTRO</h1>
+      <form>
+        <label for="nombre">Nombre(s)</label>
+        <input type="nombre" id="nombre" placeholder="Ingresa tu nombre sin acentos" required />
+        <span class="error-message">Sin acentos</span>
+            <div class="form-row">
+            <div class="form-group">
+                <label for="apellidoPaterno">Apellido Paterno</label>
+                <input type="text" id="apellidoPaterno" placeholder="Solo apellido paterno" required />
+                <span class="error-message">Campo vacío</span>
+            </div>
+
+            <div class="form-group">
+                <label for="apellidoMaterno">Apellido Materno</label>
+                <input type="text" id="apellidoMaterno" placeholder="Solo apellido materno" required />
+                <span class="error-message">Campo vacío</span>
+            </div>
+            </div>
+
+            <div class="form-row">
+            <div class="form-group">
+            <label for="CarreraEnCurso">Carrera en curso</label>
+            <select id="CarreraEnCurso" required>
+                <option value="" disabled selected>Seleccionar</option>
+                <option value="ISC2009">ISC 2009</option>
+                <option value="ISC2020">ISC 2020</option>
+                <option value="LCD">LCD</option>
+                <option value="IA">IA</option>
+            </select>
+            <span class="error-message">Selecciona una</span>
+            </div>
+
+
+            <div class="form-group">
+                <label for="NoBoleta">No. Boleta</label>
+                <input type="text" id="NoBoleta" placeholder="Value" required />
+                <span class="error-message">Campo incompleto o no válido</span>
+            </div>
+            </div>
+
+            <div class="form-row">
+            <div class="form-group">
+                <label for="email">Correo institucional o número de boleta</label>
+                <input type="email" id="email" placeholder="Ingrese un correo o boleta válidos" required />
+                <span class="error-message">Ingreso no válido</span>
+            </div>
+
+            <div class="form-group">
+                <label for="Comprobante">Comprobante de inscripción</label>
+                <button type="button">Subir archivo</button>
+            </div>
+            </div>
+
+            <div class="form-row">
+            <div class="form-group">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" placeholder="contraseña" required />
+                <span class="error-message">Campo vacío</span>
+            </div>
+
+            <div class="form-group">
+                <label for="ContraseñaConfirm">Confirmar contraseña</label>
+                <input type="password" id="ContraseñaConfirm" placeholder="Confirmar contraseña" required />
+                <span class="error-message">Campo vacío</span>
+            </div>
+            </div>
+        
+
+        <button type="submit">REGISTRARSE</button>
+        <p class="register-text">Ya tengo cuenta.   <a href="#">Ingresar</a>.</p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
